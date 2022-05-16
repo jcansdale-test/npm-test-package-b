@@ -1,0 +1,28 @@
+{
+  "name": "@viktorsebok/npm-test-package-b",
+  "version": "1.0.0",
+  "description": "This is the package, which bunbles the package \"a\"...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viktorsebok/npm-test-package-b.git"
+  },
+  "publishConfig": {
+    "@viktorsebok:registry": "https://npm.pkg.github.com"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viktorsebok/npm-test-package-b/issues"
+  },
+  "homepage": "https://github.com/viktorsebok/npm-test-package-b#readme",
+  "dependencies": {
+    "@viktorsebok/npm-test-package-a": "^1.0.0"
+  },
+  "bundleDependencies": [
+    "@viktorsebok/npm-test-package-a"
+  ]
+}
