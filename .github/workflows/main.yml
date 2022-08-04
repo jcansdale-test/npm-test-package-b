@@ -30,3 +30,8 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ github.token }}
+
+      - name: View the package
+        run: npm view @${{ github.repository_owner }}/npm-test-package-b@${{ env.VERSION }} --json
+        env:
+          NODE_AUTH_TOKEN: ${{ github.token }}
