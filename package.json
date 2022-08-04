@@ -1,5 +1,5 @@
 {
-    "name": "@viktorsebok/npm-test-package-b",
+    "name": "@jcansdale-test/npm-test-package-b",
     "version": "1.0.1",
     "description": "This is the package, which bunbles the package \"a\"...",
     "main": "index.js",
