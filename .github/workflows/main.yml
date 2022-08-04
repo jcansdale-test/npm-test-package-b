@@ -23,6 +23,11 @@ jobs:
       - name: Set package version to ${{ env.VERSION }}
         run: npm version ${{ env.VERSION }} --no-git-tag-version --allow-same-version
 
+      - name: Install packages
+        run: npm install
+        env:
+          NODE_AUTH_TOKEN: ${{ github.token }}
+
       - name: Build the package
         run: npm pack
 
