@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/viktorsebok/npm-test-package-b.git"
+        "url": "git+https://github.com/jcansdale-test/npm-test-package-b.git"
     },
     "publishConfig": {
         "@jcansdale-test:registry": "https://npm.pkg.github.com"
