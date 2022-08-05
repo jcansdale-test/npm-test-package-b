@@ -20,7 +20,7 @@ jobs:
 
       - uses: actions/setup-node@v1
         with:
-          scope: viktorsebok
+          scope: ${{ github.repository_owner }}
           registry-url: https://npm.pkg.github.com
 
       - name: Install packages
@@ -30,11 +30,6 @@ jobs:
 
       - name: Build the package
         run: npm pack
-
-      - uses: actions/setup-node@v1
-        with:
-          scope: ${{ github.repository_owner }}
-          registry-url: https://npm.pkg.github.com
 
       - name: Publish the package
         run: npm publish
