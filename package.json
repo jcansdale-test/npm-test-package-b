@@ -11,7 +11,7 @@
         "url": "git+https://github.com/viktorsebok/npm-test-package-b.git"
     },
     "publishConfig": {
-        "@viktorsebok:registry": "https://npm.pkg.github.com"
+        "@jcansdale-test:registry": "https://npm.pkg.github.com"
     },
     "author": "",
     "license": "ISC",
@@ -20,9 +20,9 @@
     },
     "homepage": "https://github.com/viktorsebok/npm-test-package-b#readme",
     "dependencies": {
-        "@viktorsebok/npm-test-package-a": "^1.0.2"
+        "@jcansdale-test/npm-test-package-a": "^1.0.2"
     },
     "bundleDependencies": [
-        "@viktorsebok/npm-test-package-a"
+        "@jcansdale-test/npm-test-package-a"
     ]
 }
